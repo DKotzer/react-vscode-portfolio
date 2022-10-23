@@ -20,7 +20,7 @@ export const links = [
   {
     index: 2,
     title: "Contact me via email",
-    href: "dylankotzer@gmail.com",
+    href: "mailto:dylankotzer@gmail.com",
     icon: <FaEnvelope />,
   },
 ];
