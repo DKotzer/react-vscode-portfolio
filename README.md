@@ -23,7 +23,7 @@
   <p align="center">
     A vscode inspired portfolio project
     <br />
-    <a href="https://github.com/dylank/react-vscode-portfolio/blob/main/README.md"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/DKotzer/react-vscode-portfolio/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://dylankotzer.com/">View Demo</a>
