@@ -1,13 +1,13 @@
 <div id="top"></div>
 
 <!-- PROJECT SHIELDS -->
-[![gh-pages-shield]][gh-pages-url]
+<!-- [![gh-pages-shield]][gh-pages-url]
 [![website-shield]][website-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![LinkedIn][linkedin-shield]][linkedin-url] -->
 
 
 
@@ -188,7 +188,7 @@ Project Link: [https://github.com/dkotzer/react-vscode-portfolio](https://github
 [license-url]: https://github.com/dkotzer/react-vscode-portfolio/blob/master/LICENSE.md
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/dylan-kotzer-3a5421190/
-[product-screenshot]: ./src/static/screenshot.gif
+[product-screenshot]: ./src/static/dark.png
 [gh-pages-shield]: https://img.shields.io/github/deployments/dkotzer/dkotzer.github.io/github-pages
 [gh-pages-url]: https://github.com/dkotzer/dkotzer.github.io/deployments
 [website-shield]:https://img.shields.io/website?url=https%3A%2F%2Fdkotzer.github.io%2F
