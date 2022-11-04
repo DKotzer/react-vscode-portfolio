@@ -2,14 +2,14 @@
 
 ## Summary
 
-Senior Software Developer specializing in web application development. Experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous programming languages including C# .NET, Python and JavaScript/TypeScript. Strong background in both accounting/auditing and software development. Mitigated the gap between end users and developers, co-designed and built scalable solutions.
+Software developer looking for an opportunity to apply my problem-solving and critical thinking skills interesting projects. Transiting to software development after a decade-long career in general IT and have been loving the change. 
 
 
 ## 👨‍💻 Experience
 
-**Software Developer** @ [General Assembly](https://generalassemb.ly/) _(Sept 2022- Present)_
+**Software Developer** @ [General Assembly](https://generalassemb.ly/) _(Sept 2022- Present)
 
-- Was hired at General Assembly as a Instructional Associate after completeing their software engineering immersive bootcamp.
+- Was hired at General Assembly as a Instructional Associate after completing their software engineering immersive bootcamp.
 - _**Technologies used:**_ Python, React.js, Django, Node, Express, JavaScript, MongoDB, PostgreSQL
 
 &nbsp;
@@ -26,7 +26,7 @@ Senior Software Developer specializing in web application development. Experienc
 **IT Head** @ [Miko and Samko Toy Warehouse](https://samkoandmikotoywarehouse.com/) _(July 2007 - Apr 2020)_
 
 - Deployed and managed key infrastructure
-- Faciliated transition to online shopping
+- Facilitated transition to online shopping
 - Maintained back end and backups
 - _**Technologies used:**_ AWS, Wordpress, Javascript, PostgreSQL, Express
 
