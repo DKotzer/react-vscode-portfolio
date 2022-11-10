@@ -2,7 +2,7 @@
 
 ## Summary
 
-Software developer looking for an opportunity to apply my problem-solving and critical thinking skills interesting projects. Transiting to software development after a decade-long career in general IT and have been loving the change. 
+Software developer looking for an opportunity to apply my problem-solving and critical thinking skills interesting projects. Transitioning to software development after a decade-long career in general IT and have been loving the change. 
 
 
 ## 👨‍💻 Experience
