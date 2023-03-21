@@ -70,7 +70,7 @@ export default function AppTree({
 
   return (
     <TreeView
-      aria-label="file system navigator"
+      aria-label='file system navigator'
       defaultCollapseIcon={<ExpandMoreIcon />}
       defaultExpandIcon={<ChevronRightIcon />}
       sx={{ minWidth: 220 }}
@@ -79,9 +79,9 @@ export default function AppTree({
       // sx={{ height: 240, flexGrow: 1, maxWidth: 400, overflowY: 'auto' }}
     >
       <TreeItem
-        nodeId="-1"
-        label="Home"
-        color="#bdc3cf"
+        nodeId='-1'
+        label='Home'
+        color='#bdc3cf'
         onClick={() => {
           navigate("/");
           setSelectedIndex(-1);
@@ -93,13 +93,13 @@ export default function AppTree({
             nodeId={index.toString()}
             label={name}
             sx={{
-              color: renderTreeItemColor(index),
-              backgroundColor: renderTreeItemBgColor(index),
+              "color": renderTreeItemColor(index),
+              "backgroundColor": renderTreeItemBgColor(index),
               "&& .Mui-selected": {
                 backgroundColor: renderTreeItemBgColor(index),
               },
             }}
-            icon={<VscMarkdown color="#6997d5" />}
+            icon={<VscMarkdown color='#6997d5' />}
             onClick={() => {
               if (!visiblePageIndexs.includes(index)) {
                 const newIndexs = [...visiblePageIndexs, index];

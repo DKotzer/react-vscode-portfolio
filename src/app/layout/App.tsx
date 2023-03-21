@@ -26,6 +26,23 @@ interface Page {
   route: string;
 }
 
+console.log(
+  `%c
+8888888b.           888                       888    d8P           888                              
+888  "Y88b          888                       888   d8P            888                              
+888    888          888                       888  d8P             888                              
+888    888 888  888 888  8888b.  88888b.      888d88K      .d88b.  888888 88888888  .d88b.  888d888 
+888    888 888  888 888     "88b 888 "88b     8888888b    d88""88b 888       d88P  d8P  Y8b 888P"   
+888    888 888  888 888 .d888888 888  888     888  Y88b   888  888 888      d88P   88888888 888     
+888  .d88P Y88b 888 888 888  888 888  888     888   Y88b  Y88..88P Y88b.   d88P    Y8b.     888     
+8888888P"   "Y88888 888 "Y888888 888  888     888    Y88b  "Y88P"   "Y888 88888888  "Y8888  888     
+                888                                                                                 
+           Y8b d88P                                                                                 
+            "Y88P"                                                                                  
+`,
+  "color:green"
+);
+
 function initVisiblePageIndexs(pages: Page[]) {
   const tabs = [];
   for (let i = 0; i < pages.length; i++) {
@@ -147,8 +164,8 @@ export default function App() {
               >
                 <Stack sx={{ mt: 1 }}>
                   <Typography
-                    variant="caption"
-                    color="text.secondary"
+                    variant='caption'
+                    color='text.secondary'
                     sx={{ ml: 4 }}
                   >
                     EXPLORER
@@ -161,7 +178,7 @@ export default function App() {
                     setCurrentComponent={setCurrentComponent}
                     visiblePageIndexs={visiblePageIndexs}
                     setVisiblePageIndexs={setVisiblePageIndexs}
-                  />
+                  ></AppTree>
                 </Stack>
               </Grid>
             )}
@@ -194,7 +211,7 @@ export default function App() {
               >
                 <Routes>
                   <Route
-                    path="/"
+                    path='/'
                     element={<Home setSelectedIndex={setSelectedIndex} />}
                   />
                   {pages.map(({ index, name, route }) => (
@@ -204,7 +221,12 @@ export default function App() {
                       element={<MDContainer path={`./pages/${name}`} />}
                     />
                   ))}
-                  <Route path="*" element={<Navigate to="/" replace />} />
+
+                  {/* <Route
+                    path='/'
+                    element={<Home setSelectedIndex={setSelectedIndex} />}
+                  /> */}
+                  <Route path='*' element={<Navigate to='/' replace />} />
                 </Routes>
               </Grid>
             </Grid>

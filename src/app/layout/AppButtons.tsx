@@ -100,16 +100,16 @@ export default function AppButtons({
             navigate(route);
           }}
           sx={{
-            borderRadius: 0,
-            px: 2,
-            textTransform: "none",
-            backgroundColor: renderButtonBgColor(index),
-            color: renderButtonColor(index),
+            "borderRadius": 0,
+            "px": 2,
+            "textTransform": "none",
+            "backgroundColor": renderButtonBgColor(index),
+            "color": renderButtonColor(index),
             "&.MuiButtonBase-root:hover": {
               bgcolor: renderButtonBgColor(index),
             },
-            transition: "none",
-            pb: 0.2,
+            "transition": "none",
+            "pb": 0.2,
           }}
         >
           <Box
@@ -121,17 +121,17 @@ export default function AppButtons({
           <Box
             component={Paper}
             sx={{
-              ml: 1,
-              mr: -1,
-              backgroundColor: renderCloseButtonBgColor(index),
-              color: renderCloseButtonColor(index),
+              "ml": 1,
+              "mr": -1,
+              "backgroundColor": renderCloseButtonBgColor(index),
+              "color": renderCloseButtonColor(index),
               "&.MuiPaper-root:hover": {
                 bgcolor: renderCloseButtonHoverBgColor(index),
                 color: renderCloseButtonHoverColor(index),
               },
-              width: 20,
-              height: 20,
-              transition: "none",
+              "width": 20,
+              "height": 20,
+              "transition": "none",
             }}
             elevation={0}
             onClick={(e: any) => {
@@ -153,11 +153,12 @@ export default function AppButtons({
       maxWidth={false}
       disableGutters
       sx={{
-        display: "inline-block",
-        overflowX: "auto",
-        overflowY: "hidden",
-        whiteSpace: "nowrap",
-        backgroundColor: theme.palette.mode === "dark" ? "#252527" : "#f3f3f3",
+        "display": "inline-block",
+        "overflowX": "auto",
+        "overflowY": "hidden",
+        "whiteSpace": "nowrap",
+        "backgroundColor":
+          theme.palette.mode === "dark" ? "#252527" : "#f3f3f3",
         "&::-webkit-scrollbar": {
           height: "3px",
           // backgroundColor: 'red',
@@ -183,6 +184,74 @@ export default function AppButtons({
       {pages.map(({ index, name, route }) =>
         renderPageButton(index, name, route)
       )}
+      {/* <a href='/Dylan_Kotzer.pdf' target='_new'>
+        <button
+          className='MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButtonBase-root  css-15cd31s-MuiButtonBase-root-MuiButton-root'
+          type='button'
+        >
+          <div className='MuiBox-root css-1w6x020'>
+            <svg
+              stroke='currentColor'
+              fill='currentColor'
+              stroke-width='0'
+              viewBox='0 0 16 16'
+              height='1em'
+              width='1em'
+              xmlns='http://www.w3.org/2000/svg'
+            >
+              <path d='M6.345 5h2.1v6.533H6.993l.055-5.31-1.774 5.31H4.072l-1.805-5.31c.04.644.06 5.31.06 5.31H1V5h2.156s1.528 4.493 1.577 4.807L6.345 5zm6.71 3.617v-3.5H11.11v3.5H9.166l2.917 2.916L15 8.617h-1.945z'></path>
+            </svg>
+          </div>
+          Resume.pdf
+          <div className='MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiBox-root css-j73nn2-MuiPaper-root'>
+            <svg
+              stroke='currentColor'
+              fill='currentColor'
+              stroke-width='0'
+              viewBox='0 0 16 16'
+              height='1em'
+              width='1em'
+              xmlns='http://www.w3.org/2000/svg'
+            >
+              <path
+                fill-rule='evenodd'
+                clip-rule='evenodd'
+                d='M7.116 8l-4.558 4.558.884.884L8 8.884l4.558 4.558.884-.884L8.884 8l4.558-4.558-.884-.884L8 7.116 3.442 2.558l-.884.884L7.116 8z'
+              ></path>
+            </svg>
+          </div>
+        </button>
+      </a> */}
+
+      {/* <span>
+        <a href='/Dylan_Kotzer.pdf' target='_new' className='resumeButton'>
+          <li
+            className='MuiTreeItem-root css-s74p80-MuiTreeItem-root'
+            role='treeitem'
+          >
+            <div className='css-1rwxlx2-MuiTreeItem-content MuiTreeItem-content'>
+              <div className='MuiTreeItem-iconContainer'>
+                <svg
+                  stroke='currentColor'
+                  fill='currentColor'
+                  stroke-width='0'
+                  viewBox='0 0 16 16'
+                  color='#6997d5'
+                  // style={`color: rgb(105, 151, 213)`};
+                  height='1em'
+                  width='1em'
+                  xmlns='http://www.w3.org/2000/svg'
+                >
+                  <path d='M6.345 5h2.1v6.533H6.993l.055-5.31-1.774 5.31H4.072l-1.805-5.31c.04.644.06 5.31.06 5.31H1V5h2.156s1.528 4.493 1.577 4.807L6.345 5zm6.71 3.617v-3.5H11.11v3.5H9.166l2.917 2.916L15 8.617h-1.945z'></path>
+                </svg>
+              </div>
+              <div className='MuiTreeItem-label removeUnderline'>
+                resume.pdf
+              </div>
+            </div>
+          </li>
+        </a>
+      </span> */}
     </Container>
   );
 }

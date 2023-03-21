@@ -9,8 +9,6 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url] -->
 
-
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -33,8 +31,6 @@
     <a href="https://github.com/dkotzer/react-vscode-portfolio/issues">Request Feature</a>
   </p>
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -60,9 +56,8 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://dkotzer.github.io/)
@@ -73,14 +68,14 @@ The project is inspired by [Visual Studio Code](https://github.com/microsoft/vsc
 
 ### Built With
 
-* [React.js](https://reactjs.org/)
-* [Material UI](https://github.com/mui/material-ui)
-* [react-markdown](https://github.com/remarkjs/react-markdown)
+- [React.js](https://reactjs.org/)
+- [Material UI](https://github.com/mui/material-ui)
+- [react-markdown](https://github.com/remarkjs/react-markdown)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 ### Installation
@@ -99,28 +94,28 @@ The project is inspired by [Visual Studio Code](https://github.com/microsoft/vsc
    ```
 4. Add your markdown pages in `public/pages`
 5. Add your routes in `src/app/pages/page.ts`, make sure the names of pages are consistent with markdown files.
-    ```ts
-    export const pages = [
-      { index: 0, name: 'overview.md', route: '/overview' },
-      { index: 1, name: 'skills.md', route: '/skills' },
-      { index: 2, name: 'experience.md', route: '/experience' },
-      { index: 3, name: 'education.md', route: '/education' },
-      { index: 4, name: 'projects.md', route: '/projects' },  
-      { index: 5, name: 'certificates.md', route: '/certificates' },
-      { index: 6, name: 'accomplishments.md', route: '/accomplishments' },
-    ];
-    ```
+   ```ts
+   export const pages = [
+     { index: 0, name: "overview.md", route: "/overview" },
+     { index: 1, name: "skills.md", route: "/skills" },
+     { index: 2, name: "experience.md", route: "/experience" },
+     { index: 3, name: "education.md", route: "/education" },
+     { index: 4, name: "projects.md", route: "/projects" },
+     { index: 5, name: "certificates.md", route: "/certificates" },
+     { index: 6, name: "awards.md", route: "/awards" },
+   ];
+   ```
 6. Add your social links in `src/app/pages/link.tsx`, which will appear in both sidebar and homepage.
-    ```ts
-    export const links = [
-      {
-        index: 0,
-        title: "Find me on Github",
-        href: "https://github.com/dkotzer",
-        icon: <FaGithub />,
-      },
-    ];
-    ```
+   ```ts
+   export const links = [
+     {
+       index: 0,
+       title: "Find me on Github",
+       href: "https://github.com/dkotzer",
+       icon: <FaGithub />,
+     },
+   ];
+   ```
 7. Runs the app in the development mode
    ```sh
    npm start
@@ -134,6 +129,7 @@ The project is inspired by [Visual Studio Code](https://github.com/microsoft/vsc
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
+
 ## Features
 
 - Powered by markdown
@@ -147,15 +143,15 @@ The project is inspired by [Visual Studio Code](https://github.com/microsoft/vsc
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- LICENSE -->
+
 ## License
 
 Distributed under the MIT License. See `LICENSE.md` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
 <!-- CONTACT -->
+
 ## Contact
 
 Dylan Kotzer - [Personal Portfolio](https://dkotzer.github.io/) - dylankotzer@gmail.com
@@ -164,20 +160,20 @@ Project Link: [https://github.com/dkotzer/react-vscode-portfolio](https://github
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
 <!-- ACKNOWLEDGMENTS -->
+
 ## Acknowledgments
 
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
-* [caglarturali.github.io](https://github.com/caglarturali/caglarturali.github.io)
+- [Img Shields](https://shields.io)
+- [GitHub Pages](https://pages.github.com)
+- [React Icons](https://react-icons.github.io/react-icons/search)
+- [caglarturali.github.io](https://github.com/caglarturali/caglarturali.github.io)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [forks-shield]: https://img.shields.io/github/forks/dkotzer/react-vscode-portfolio
 [forks-url]: https://github.com/dkotzer/react-vscode-portfolio/network/members
 [stars-shield]: https://img.shields.io/github/stars/dkotzer/react-vscode-portfolio
@@ -191,5 +187,5 @@ Project Link: [https://github.com/dkotzer/react-vscode-portfolio](https://github
 [product-screenshot]: ./src/static/dark.png
 [gh-pages-shield]: https://img.shields.io/github/deployments/dkotzer/dkotzer.github.io/github-pages
 [gh-pages-url]: https://github.com/dkotzer/dkotzer.github.io/deployments
-[website-shield]:https://img.shields.io/website?url=https%3A%2F%2Fdkotzer.github.io%2F
+[website-shield]: https://img.shields.io/website?url=https%3A%2F%2Fdkotzer.github.io%2F
 [website-url]: https://dkotzer.github.io/

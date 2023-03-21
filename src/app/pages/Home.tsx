@@ -1,16 +1,9 @@
-import {
-  Box,
-  Grid,
-  IconButton,
-  Link,
-  Stack,
-  Tooltip,
-  Typography,
-} from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import React, { useEffect } from "react";
 import logo from "../../static/favicon.png";
 import { useLocation } from "react-router-dom";
 import { links } from "./links";
+import About from "../components/About";
 
 interface Props {
   setSelectedIndex: React.Dispatch<React.SetStateAction<number>>;
@@ -18,6 +11,7 @@ interface Props {
 
 export default function Home({ setSelectedIndex }: Props) {
   const { pathname } = useLocation();
+
   useEffect(() => {
     setSelectedIndex(-1);
   }, [setSelectedIndex]);
@@ -30,61 +24,10 @@ export default function Home({ setSelectedIndex }: Props) {
     <Grid
       container
       spacing={0}
-      direction="column"
-      alignItems="center"
-      justifyContent="center"
+      direction='column'
       sx={{ minHeight: `calc(100vh - 20px - 33px)` }}
     >
-      <Grid item xs={3}>
-        <Stack direction={{ xs: "column", sm: "row-reverse" }} spacing={2}>
-          <Box display="flex" sx={{ justifyContent: "center" }}>
-            <img src={logo} width="100px" alt="logo" />
-          </Box>
-          <Box>
-            <Grid
-              display="flex"
-              justifyContent={{ xs: "center", sm: "flex-start" }}
-            >
-              <Typography sx={{textDecoration: 'none' }} variant="h3"><a  className="linked" href="/#/overview">{process.env.REACT_APP_NAME}</a></Typography>
-            </Grid>
-            <Grid
-              display="flex"
-              justifyContent={{ xs: "center", sm: "flex-start" }}
-            >
-              <Typography variant="subtitle1" gutterBottom>
-                Full Stack Developer
-                {/* Better an{' '}
-                <Box fontWeight="fontWeightMedium" display="inline">
-                  oops
-                </Box>{' '}
-                than a{' '}
-                <Box fontWeight="fontWeightMedium" display="inline">
-                  what if
-                </Box> */}
-              </Typography>
-            </Grid>
-            <Grid
-              display="flex"
-              justifyContent={{ xs: "center", sm: "flex-start" }}
-            >
-              <Stack direction="row" spacing={0.4}>
-                {links.map((link) => (
-                  <Tooltip key={link.index} title={link.title} arrow>
-                    <Link
-                      target="_blank"
-                      href={link.href}
-                      underline="none"
-                      color="inherit"
-                    >
-                      <IconButton color="inherit">{link.icon}</IconButton>
-                    </Link>
-                  </Tooltip>
-                ))}
-              </Stack>
-            </Grid>
-          </Box>
-        </Stack>
-      </Grid>
+      <About />
     </Grid>
   );
 }
