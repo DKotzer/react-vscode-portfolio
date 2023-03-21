@@ -285,3 +285,15 @@ p {
 .MuiContainer-maxWidthLg > p:nth-child(4) > img:nth-child(1):hover {
   scale: 105%;
 }
+
+.MuiContainer-maxWidthLg > p:nth-child(6) > video:nth-child(1) {
+  max-width: 99%;
+}
+
+.MuiContainer-maxWidthLg > p:nth-child(14) > img:nth-child(1) {
+  max-width: 99%;
+}
+
+.MuiContainer-maxWidthLg > p:nth-child(18) > img:nth-child(1) {
+  max-width: 99%;
+}

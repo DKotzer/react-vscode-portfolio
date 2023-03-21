@@ -4,6 +4,8 @@
 
 ![AI Adventure](https://i.imgur.com/r3O8YgC.mp4)
 
+<video  src="https://i.imgur.com/r3O8YgC.mp4" autoplay loop muted></video>
+
 - GPT3 AI powered choose your own adventure game with all responses being fully ai generated.
 - All character and background images are also AI generated using a clip-guided diffusion model that can generate images based on text prompts.
 - Built with: Node, MongoDB, React.js, Express, JavaScript, AWS, GPT3 OpenAI API
