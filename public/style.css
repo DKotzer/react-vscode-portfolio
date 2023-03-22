@@ -142,7 +142,7 @@ input[type="button"] {
 }
 
 .gptText {
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.8rem;
 }
 
@@ -155,7 +155,7 @@ h2 {
 }
 
 button {
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding: 10px;
   border-radius: 5px;
   background-color: #444;
@@ -266,34 +266,31 @@ p {
   position: relative;
 }
 
+.markdown-logo p img {
+  width: 300px;
+}
+
+.markdown-img p img,
+video {
+  max-width: 99%;
+}
+
 .css-1oqqzyl-MuiContainer-root {
   margin-left: 0px !important;
-}
-
-.MuiContainer-maxWidthLg > p:nth-child(8) > img:nth-child(1) {
-  max-width: 250px;
-}
-
-.MuiContainer-maxWidthLg > p:nth-child(12) > img:nth-child(1) {
-  max-width: 250px;
-}
-
-.MuiContainer-maxWidthLg > p:nth-child(4) > img:nth-child(1) {
-  border-radius: 25px;
 }
 
 .MuiContainer-maxWidthLg > p:nth-child(4) > img:nth-child(1):hover {
   scale: 105%;
 }
-
-.MuiContainer-maxWidthLg > p:nth-child(6) > video:nth-child(1) {
-  max-width: 99%;
+.MuiContainer-maxWidthLg > p:nth-child(4) > img:nth-child(1) {
+  border-radius: 15px;
 }
 
-.MuiContainer-maxWidthLg > p:nth-child(14) > img:nth-child(1) {
-  max-width: 99%;
+.css-1qsxih2 {
+  margin-left: 1px !important;
 }
 
-.MuiContainer-maxWidthLg > p:nth-child(18) > img:nth-child(1) {
-  max-width: 99%;
+.MuiContainer-maxWidthLg > p:nth-child(10) > img:nth-child(1) {
+  width: 99%;
+  max-width: 960px;
 }

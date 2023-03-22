@@ -49,19 +49,26 @@ export default function About() {
       </a>
       <div className=''>
         <p className='gptText'>
-          Allow me to introduce you to DylanGPT, an advanced chatbot built on
-          cutting-edge technology that I developed to be the resume of tomorrow.
-          You can use DylanGPT to answer any questions you may have about me,
-          including contextualized questions about my skills, experience, and
-          projects, and more.
+          {" "}
+          Allow me to introduce you to{" "}
+          <a href='https://gpt.dylankotzer.com/'>DylanGPT</a>, an advanced
+          chatbot built on cutting-edge technology that I developed to be the
+          resume of tomorrow. You can use{" "}
+          <a href='https://gpt.dylankotzer.com/'>DylanGPT</a> to answer any
+          questions you may have about me, including contextualized questions
+          about my skills, experience, and projects, and more.
         </p>
+
         <p className='gptText'>
-          DylanGPT is also capable of having engaging conversations about a wide
-          range of topics beyond just my portfolio. Why not take advantage of
-          this unique opportunity to glimpse the future of digital resumes? Chat
-          with DylanGPT to get a better understanding of my qualifications and
-          fit for your organization.
+          {" "}
+          <a href='https://gpt.dylankotzer.com/'>DylanGPT</a> is also capable of
+          having engaging conversations about a wide range of topics beyond just
+          my portfolio. Why not take advantage of this unique opportunity to
+          glimpse the future of digital resumes? Chat with{" "}
+          <a href='https://gpt.dylankotzer.com/'>DylanGPT</a> to get a better
+          understanding of my qualifications and fit for your organization.{" "}
         </p>
+
         <div className='desk'>
           <a href='https://gpt.dylankotzer.com'>
             <img src='/chatbot.png' alt='DylanGPT' />
@@ -130,29 +137,15 @@ export default function About() {
               </p>
             </div> 
           </div>*/}
-
-        <div className='row'>
-          <div className='columns contact-details'>
-            <h2>Contact Details</h2>
-            <p className='address'>
-              <span>Dylan Kotzer</span>
-              <br />
-              <span>
-                <br />
-                Toronto, Ontario, Canada
-              </span>
-              <br />
-              <span>(1)-416-671-1387</span>
-              <br />
-              <span>DylanKotzer@gmail.com</span>
-            </p>
-          </div>
-
-          <div className='columns download'>
-            <p></p>
-          </div>
-        </div>
       </div>
+      <p>
+        If you are tired of chat bots you can browse all the same information
+        here on my portfolio site by using the top or side navigation menu, or
+        click below to view my resume.{" "}
+      </p>
+      <a href='/Dylan_Kotzer.pdf'>
+        <button className='fa fa-download'>View Resume</button>
+      </a>
     </section>
   );
 }
