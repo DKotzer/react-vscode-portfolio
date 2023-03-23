@@ -1,4 +1,4 @@
-# 🧪 Projects
+# 📂 Projects
 
 ## [DylanGPT](https://gpt.dylankotzer.com)
 

@@ -12,6 +12,7 @@ interface Page {
   index: number;
   name: string;
   route: string;
+  icon: any;
 }
 
 interface Props {
@@ -19,13 +20,14 @@ interface Props {
     index: number;
     name: string;
     route: string;
+    icon: any;
   }[];
   selectedIndex: number;
   setSelectedIndex: React.Dispatch<React.SetStateAction<number>>;
   currentComponent: string;
   setCurrentComponent: React.Dispatch<React.SetStateAction<string>>;
-  visiblePageIndexs: number[];
-  setVisiblePageIndexs: React.Dispatch<React.SetStateAction<number[]>>;
+  visiblePageIndexes: number[];
+  setVisiblePageIndexes: React.Dispatch<React.SetStateAction<number[]>>;
 }
 
 export default function AppTree({
@@ -34,8 +36,8 @@ export default function AppTree({
   setSelectedIndex,
   currentComponent,
   setCurrentComponent,
-  visiblePageIndexs,
-  setVisiblePageIndexs,
+  visiblePageIndexes,
+  setVisiblePageIndexes,
 }: Props) {
   const navigate = useNavigate();
   const theme = useTheme();
@@ -87,7 +89,7 @@ export default function AppTree({
           setSelectedIndex(-1);
         }}
       >
-        {pages.map(({ index, name, route }) => (
+        {pages.map(({ index, name, route, icon }) => (
           <TreeItem
             key={index}
             nodeId={index.toString()}
@@ -99,11 +101,11 @@ export default function AppTree({
                 backgroundColor: renderTreeItemBgColor(index),
               },
             }}
-            icon={<VscMarkdown color='#6997d5' />}
+            icon={React.createElement(icon, { color: "#6997d5" })}
             onClick={() => {
-              if (!visiblePageIndexs.includes(index)) {
-                const newIndexs = [...visiblePageIndexs, index];
-                setVisiblePageIndexs(newIndexs);
+              if (!visiblePageIndexes.includes(index)) {
+                const newIndexes = [...visiblePageIndexes, index];
+                setVisiblePageIndexes(newIndexes);
               }
               navigate(route);
               setSelectedIndex(index);

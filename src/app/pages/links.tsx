@@ -1,3 +1,4 @@
+import { BiGitBranch } from "react-icons/bi";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 import { VscFilePdf } from "react-icons/vsc";
@@ -26,5 +27,11 @@ export const links = [
     title: "View Resume",
     href: "/Dylan_Kotzer.pdf",
     icon: <VscFilePdf />,
+  },
+  {
+    index: 4,
+    title: "Repo for this site",
+    href: "https://github.com/dkotzer/react-vscode-portfolio",
+    icon: <BiGitBranch />,
   },
 ];

@@ -43,7 +43,7 @@ console.log(
   "color:green"
 );
 
-function initVisiblePageIndexs(pages: Page[]) {
+function initVisiblePageIndexes(pages: Page[]) {
   const tabs = [];
   for (let i = 0; i < pages.length; i++) {
     const page = pages[i];
@@ -57,8 +57,8 @@ export default function App() {
   const [expanded, setExpanded] = useState(isBrowser);
   const [selectedIndex, setSelectedIndex] = useState(-1);
   const [currentComponent, setCurrentComponent] = useState("");
-  const [visiblePageIndexs, setVisiblePageIndexs] = useState(
-    initVisiblePageIndexs(pages)
+  const [visiblePageIndexes, setVisiblePageIndexes] = useState(
+    initVisiblePageIndexes(pages)
   );
   const [darkMode, setDarkMode] = useState(false);
   const [visiblePages, setVisiblePages] = useState(pages);
@@ -99,42 +99,42 @@ export default function App() {
   }, []);
 
   const deletedIndex = visiblePages.find(
-    (x) => !visiblePageIndexs.includes(x.index)
+    (x) => !visiblePageIndexes.includes(x.index)
   )?.index;
 
   useEffect(() => {
     const newPages = [];
 
-    for (const index of visiblePageIndexs) {
+    for (const index of visiblePageIndexes) {
       const page = pages.find((x) => x.index === index);
       if (page) newPages.push(page);
     }
     setVisiblePages(newPages);
 
-    if (visiblePageIndexs.length === 0) {
+    if (visiblePageIndexes.length === 0) {
       setSelectedIndex(-1);
       navigate("/");
     } else if (
       deletedIndex === selectedIndex &&
-      deletedIndex > Math.max(...visiblePageIndexs)
+      deletedIndex > Math.max(...visiblePageIndexes)
     ) {
-      setSelectedIndex(Math.max(...visiblePageIndexs));
+      setSelectedIndex(Math.max(...visiblePageIndexes));
       const page = pages.find(
-        (x) => x.index === Math.max(...visiblePageIndexs)
+        (x) => x.index === Math.max(...visiblePageIndexes)
       );
       if (page) navigate(page.route);
     } else if (
       deletedIndex === selectedIndex &&
-      deletedIndex < Math.max(...visiblePageIndexs)
+      deletedIndex < Math.max(...visiblePageIndexes)
     ) {
-      setSelectedIndex(Math.min(...visiblePageIndexs));
+      setSelectedIndex(Math.min(...visiblePageIndexes));
       const page = pages.find(
-        (x) => x.index === Math.min(...visiblePageIndexs)
+        (x) => x.index === Math.min(...visiblePageIndexes)
       );
       if (page) navigate(page.route);
     } else {
     }
-  }, [visiblePageIndexs, navigate, deletedIndex, selectedIndex]);
+  }, [visiblePageIndexes, navigate, deletedIndex, selectedIndex]);
 
   return (
     <ThemeProvider theme={theme}>
@@ -176,8 +176,8 @@ export default function App() {
                     setSelectedIndex={setSelectedIndex}
                     currentComponent={currentComponent}
                     setCurrentComponent={setCurrentComponent}
-                    visiblePageIndexs={visiblePageIndexs}
-                    setVisiblePageIndexs={setVisiblePageIndexs}
+                    visiblePageIndexes={visiblePageIndexes}
+                    setVisiblePageIndexes={setVisiblePageIndexes}
                   ></AppTree>
                 </Stack>
               </Grid>
@@ -196,8 +196,8 @@ export default function App() {
                   setSelectedIndex={setSelectedIndex}
                   currentComponent={currentComponent}
                   setCurrentComponent={setCurrentComponent}
-                  visiblePageIndexs={visiblePageIndexs}
-                  setVisiblePageIndexs={setVisiblePageIndexs}
+                  visiblePageIndexes={visiblePageIndexes}
+                  setVisiblePageIndexes={setVisiblePageIndexes}
                 />
               </Grid>
 
@@ -218,7 +218,14 @@ export default function App() {
                     <Route
                       key={index}
                       path={route}
-                      element={<MDContainer path={`./pages/${name}`} />}
+                      element={
+                        <MDContainer
+                          path={`./pages/${name.substring(
+                            0,
+                            name.lastIndexOf(".")
+                          )}.md`}
+                        />
+                      }
                     />
                   ))}
 

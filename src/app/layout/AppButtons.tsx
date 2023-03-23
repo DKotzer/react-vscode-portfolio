@@ -10,13 +10,14 @@ interface Props {
     index: number;
     name: string;
     route: string;
+    icon: any;
   }[];
   selectedIndex: number;
   setSelectedIndex: React.Dispatch<React.SetStateAction<number>>;
   currentComponent: string;
   setCurrentComponent: React.Dispatch<React.SetStateAction<string>>;
-  visiblePageIndexs: number[];
-  setVisiblePageIndexs: React.Dispatch<React.SetStateAction<number[]>>;
+  visiblePageIndexes: number[];
+  setVisiblePageIndexes: React.Dispatch<React.SetStateAction<number[]>>;
 }
 
 export default function AppButtons({
@@ -25,8 +26,8 @@ export default function AppButtons({
   setSelectedIndex,
   currentComponent,
   setCurrentComponent,
-  visiblePageIndexs,
-  setVisiblePageIndexs,
+  visiblePageIndexes,
+  setVisiblePageIndexes,
 }: Props) {
   const navigate = useNavigate();
   const theme = useTheme();
@@ -79,7 +80,12 @@ export default function AppButtons({
     }
   }
 
-  function renderPageButton(index: number, name: string, route: string) {
+  function renderPageButton(
+    index: number,
+    name: string,
+    route: string,
+    icon: any
+  ) {
     return (
       <Box
         key={index}
@@ -115,7 +121,7 @@ export default function AppButtons({
           <Box
             sx={{ color: "#6997d5", width: 20, height: 20, mr: 0.4, ml: -1 }}
           >
-            <VscMarkdown />
+            {React.createElement(icon, { color: "#6997d5" })}
           </Box>
           {name}
           <Box
@@ -136,8 +142,8 @@ export default function AppButtons({
             elevation={0}
             onClick={(e: any) => {
               e.stopPropagation();
-              setVisiblePageIndexs(
-                visiblePageIndexs.filter((x) => x !== index)
+              setVisiblePageIndexes(
+                visiblePageIndexes.filter((x) => x !== index)
               );
             }}
           >
@@ -181,8 +187,8 @@ export default function AppButtons({
         //   },
       }}
     >
-      {pages.map(({ index, name, route }) =>
-        renderPageButton(index, name, route)
+      {pages.map(({ index, name, route, icon }) =>
+        renderPageButton(index, name, route, icon)
       )}
       {/* <a href='/Dylan_Kotzer.pdf' target='_new'>
         <button
@@ -223,35 +229,7 @@ export default function AppButtons({
         </button>
       </a> */}
 
-      {/* <span>
-        <a href='/Dylan_Kotzer.pdf' target='_new' className='resumeButton'>
-          <li
-            className='MuiTreeItem-root css-s74p80-MuiTreeItem-root'
-            role='treeitem'
-          >
-            <div className='css-1rwxlx2-MuiTreeItem-content MuiTreeItem-content'>
-              <div className='MuiTreeItem-iconContainer'>
-                <svg
-                  stroke='currentColor'
-                  fill='currentColor'
-                  stroke-width='0'
-                  viewBox='0 0 16 16'
-                  color='#6997d5'
-                  // style={`color: rgb(105, 151, 213)`};
-                  height='1em'
-                  width='1em'
-                  xmlns='http://www.w3.org/2000/svg'
-                >
-                  <path d='M6.345 5h2.1v6.533H6.993l.055-5.31-1.774 5.31H4.072l-1.805-5.31c.04.644.06 5.31.06 5.31H1V5h2.156s1.528 4.493 1.577 4.807L6.345 5zm6.71 3.617v-3.5H11.11v3.5H9.166l2.917 2.916L15 8.617h-1.945z'></path>
-                </svg>
-              </div>
-              <div className='MuiTreeItem-label removeUnderline'>
-                resume.pdf
-              </div>
-            </div>
-          </li>
-        </a>
-      </span> */}
+      
     </Container>
   );
 }

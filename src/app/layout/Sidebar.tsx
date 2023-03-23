@@ -26,18 +26,18 @@ export default function Sidebar({
         height: `calc(100vh - 20px)`,
         backgroundColor: darkMode ? "#333333" : "#2c2c2c",
       }}
-      justifyContent="space-between"
-      display="flex"
-      flexDirection="column"
+      justifyContent='space-between'
+      display='flex'
+      flexDirection='column'
       component={Paper}
       square
       elevation={0}
     >
       <Box
         sx={{ flexGrow: 0 }}
-        display="flex"
-        justifyContent="center"
-        flexDirection="column"
+        display='flex'
+        justifyContent='center'
+        flexDirection='column'
       >
         <Box
           sx={{
@@ -53,73 +53,46 @@ export default function Sidebar({
         >
           <Box
             sx={{
-              flexGrow: 0,
-              my: 1.5,
-              color: expanded ? "white" : "#858585",
-              fontSize: 24,
-              outline: "none",
+              "flexGrow": 0,
+              "my": 1.5,
+              "color": expanded ? "white" : "#858585",
+              "fontSize": 24,
+              "outline": "none",
               "&:hover": {
                 color: "white",
               },
             }}
-            display="flex"
-            justifyContent="center"
+            display='flex'
+            justifyContent='center'
           >
             <VscFiles />
           </Box>
         </Box>
-        <Tooltip title="Source of this project" arrow placement="right">
-          <Link
-            target="_blank"
-            href={"https://github.com/dkotzer/react-vscode-portfolio"}
-            underline="none"
-            color="inherit"
-            sx={{ WebkitTapHighlightColor: "rgba(0,0,0,0)" }}
-          >
-            <Box
-              sx={{
-                flexGrow: 0,
-                cursor: "pointer",
-                color: "#858585",
-                fontSize: 24,
-                "&:hover": {
-                  color: "white",
-                },
-              }}
-              display="flex"
-              justifyContent="center"
-            >
-              <Box mt={0.7}>
-                <BiGitBranch />
-              </Box>
-            </Box>
-          </Link>
-        </Tooltip>
 
         <Divider sx={{ m: 0.5 }} />
 
         {links.map((link) => (
-          <Tooltip title={link.title} arrow placement="right" key={link.index}>
+          <Tooltip title={link.title} arrow placement='right' key={link.index}>
             <Link
-              target="_blank"
+              target='_blank'
               href={link.href}
-              underline="none"
-              color="inherit"
+              underline='none'
+              color='inherit'
               sx={{ WebkitTapHighlightColor: "rgba(0,0,0,0)" }}
             >
               <Box
                 sx={{
-                  flexGrow: 0,
-                  m: 0.5,
-                  color: "#858585",
-                  fontSize: 24,
+                  "flexGrow": 0,
+                  "m": 0.5,
+                  "color": "#858585",
+                  "fontSize": 24,
                   "&:hover": {
                     color: "white",
                   },
-                  cursor: "pointer",
+                  "cursor": "pointer",
                 }}
-                display="flex"
-                justifyContent="center"
+                display='flex'
+                justifyContent='center'
               >
                 <Box mt={0.7}>{link.icon}</Box>
               </Box>
@@ -130,28 +103,28 @@ export default function Sidebar({
 
       <Box
         sx={{ flexGrow: 0, pb: 0.5 }}
-        display="flex"
-        justifyContent="center"
-        flexDirection="column"
+        display='flex'
+        justifyContent='center'
+        flexDirection='column'
       >
         <Tooltip
           title={darkMode ? "Turn on the light" : "Turn off the light"}
-          placement="right"
+          placement='right'
           arrow
         >
           <Box
             sx={{
-              flexGrow: 0,
-              fontSize: 24,
-              color: "#858585",
-              cursor: "pointer",
+              "flexGrow": 0,
+              "fontSize": 24,
+              "color": "#858585",
+              "cursor": "pointer",
               "&:hover": {
                 color: "white",
               },
-              WebkitTapHighlightColor: "rgba(0,0,0,0)",
+              "WebkitTapHighlightColor": "rgba(0,0,0,0)",
             }}
-            display="flex"
-            justifyContent="center"
+            display='flex'
+            justifyContent='center'
             onClick={handleThemeChange}
           >
             {!darkMode ? (
@@ -167,17 +140,17 @@ export default function Sidebar({
         </Tooltip>
         <Box
           sx={{
-            flexGrow: 0,
-            fontSize: 24,
-            color: "#858585",
-            cursor: "pointer",
+            "flexGrow": 0,
+            "fontSize": 24,
+            "color": "#858585",
+            "cursor": "pointer",
             "&:hover": {
               color: "white",
             },
-            WebkitTapHighlightColor: "rgba(0,0,0,0)",
+            "WebkitTapHighlightColor": "rgba(0,0,0,0)",
           }}
-          display="flex"
-          justifyContent="center"
+          display='flex'
+          justifyContent='center'
         >
           <Box mt={0.7}>
             <VscSettingsGear />
