@@ -4,56 +4,7 @@
 
 Software developer looking for an opportunity to apply my problem-solving and critical thinking skills interesting projects. Transitioning to software development after a decade-long career in general IT and have been loving the change.
 
-## 👨‍💻 Experience
-
-**Software Developer** @ [General Assembly](https://generalassemb.ly/) _(Sept 2022- Feb 2023)_
-
-<div class="markdown-logo">
-
-![General Assembly](https://i.imgur.com/B9bqZCx.png)
-
-</div>
-
-- Was hired at General Assembly as a Instructional Associate after completeing their software engineering immersive bootcamp.
-- _**Technologies used:**_ Python, React.js, Django, Node, Express, JavaScript, MongoDB, PostgreSQL
-
-&nbsp;
-
-**Web Dev** @ [Dr. Anne Hussain](https://www.annehussain.com/) _(July 2016 - Present)_
-
-<div class="markdown-logo">
-
-![Dr Anne Hussain](https://i.imgur.com/FA3tzU0.png)
-
-</div>
-
-- Manage e-mail marking campaigns and create landing pages on an ongoing basis
-- Facilitated transition to virtual care
-- Manages and builds online courses
-- _**Technologies used:**_ AWS, Wordpress, Javascript, PostgreSQL, Express, Sendy
-
-&nbsp;
-
-**IT Head** @ [Samko and Miko Toy Warehouse](https://samkoandmikotoywarehouse.com/) _(July 2007 - Apr 2020)_
-
-<div class="markdown-logo">
-
-![Samko and Miko Toy Warehouse](https://samkoandmikotoywarehouse.com/skin/images/logo.png.webp)
-
-</div>
-
-- Deployed and managed key infrastructure
-- Faciliated transition to online shopping
-- Maintained back end and backups
-- _**Technologies used:**_ AWS, Wordpress, Javascript, PostgreSQL, Express
-
-# 👨‍🎓 Education
-
-1. `2021-2022` [General Assembly](https://generalassemb.ly/) - Software engineering immersive bootcamp at General Assembly
-2. `2013-2016` [AIM Academy](https://aim-academy.ca/) - Diploma in Acupuncture and TCM
-3. `2006-2010` [McMaster University](https://www.mcmaster.ca/) - BA with a major in Philosophy
-
-# 💻 Skills
+## 💻 Skills
 
 ### General Tech Stacks
 
@@ -135,13 +86,27 @@ Software developer looking for an opportunity to apply my problem-solving and cr
 
 <div class="markdown-img">
 
-![DCrypto](https://raw.githubusercontent.com/DKotzer/DTrade/main/images/buy.png)
+<video  src="https://i.imgur.com/XpY6J3I.mp4" autoplay loop muted></video>
 
 </div>
 
 - Crypto trading app that allows you to trade crypto in real time with practice money via API calls to the kraken exchange for real time price updates.
 - Built with: Node, Vanilla JavaScript, MongoDB, CryptoCurrency eXchange TradingAPI
 - [GitHub Repo](https://github.com/DKotzer/DTrade)
+
+### [CoffeeBot](https://gryphhacks-2022.devpost.com/project-gallery) (TheTester@gmail.com/100Tester) 🔗
+
+<div class="markdown-img">
+
+<video  src="https://i.imgur.com/O5xuDnt.mp4
+" autoplay loop muted></video>
+
+</div>
+
+- Winner of best Discord Bot at Gryph Hacks Hackathon 2022. A discord bot that can split up a room in to different groups based on user input, with a number of additional features like scheduling meetings.
+
+- Built with: Node, Discord.js, Javascript, Discord.
+- [GitHub Repo](https://github.com/DKotzer/discord-bot-hackathon)
 
 ### [3D World](https://threedworld.herokuapp.com) (TheTester/100Tester) 🔗
 
@@ -169,6 +134,49 @@ Software developer looking for an opportunity to apply my problem-solving and cr
 - Built with: Python, Django, JavaScript, Path of Exile API
 - [GitHub Repo](https://github.com/DKotzer/poe-collection)
 
+## 👨‍💻 Experience
+
+**Software Developer** @ [General Assembly](https://generalassemb.ly/) _(Sept 2022- Feb 2023)_
+
+<div class="markdown-logo">
+
+![General Assembly](https://i.imgur.com/B9bqZCx.png)
+
+</div>
+
+- Was hired at General Assembly as a Instructional Associate after completeing their software engineering immersive bootcamp.
+- _**Technologies used:**_ Python, React.js, Django, Node, Express, JavaScript, MongoDB, PostgreSQL
+
+&nbsp;
+
+**Web Dev** @ [Dr. Anne Hussain](https://www.annehussain.com/) _(July 2016 - Present)_
+
+<div class="markdown-logo">
+
+![Dr Anne Hussain](https://i.imgur.com/VUgaYTT.png)
+
+</div>
+
+- Manage e-mail marking campaigns and create landing pages on an ongoing basis
+- Facilitated transition to virtual care
+- Manages and builds online courses
+- _**Technologies used:**_ AWS, Wordpress, Javascript, PostgreSQL, Express, Sendy
+
+&nbsp;
+
+**IT Head** @ [Samko and Miko Toy Warehouse](https://samkoandmikotoywarehouse.com/) _(July 2007 - Apr 2020)_
+
+<div class="markdown-logo">
+
+![Samko and Miko Toy Warehouse](https://samkoandmikotoywarehouse.com/skin/images/logo.png.webp)
+
+</div>
+
+- Deployed and managed key infrastructure
+- Faciliated transition to online shopping
+- Maintained back end and backups
+- _**Technologies used:**_ AWS, Wordpress, Javascript, PostgreSQL, Express
+
 ## 🏆 Awards
 
 **Won Best Discord Bot** @ [Gryph Hacks Hackathon](https://gryphhacks-2022.devpost.com/project-gallery) _(May 2022)_
@@ -180,12 +188,22 @@ Built Coffee Bot - A discord bot that can split up a room in to different groups
 
 </div>
 
-## 🥇 Certificates
+## 👨‍🎓 Education
 
-- General Assembly Software Engineering Immersive(Toronto)
+`2021-2022` [General Assembly](https://generalassemb.ly/) - Software engineering immersive bootcamp at General Assembly
 
 <div class="markdown-img">
 
 ![Cert](https://i.imgur.com/FtCA9yY.png)
 
 </div>
+
+`2013-2016` [AIM Academy](https://aim-academy.ca/) - Diploma in Acupuncture and TCM
+
+<div class="markdown-img">
+
+![Cert2](https://i.imgur.com/t1PcBRr.png)
+
+</div>
+
+`2006-2010` [McMaster University](https://www.mcmaster.ca/) - BA with a major in Philosophy

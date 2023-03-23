@@ -38,15 +38,13 @@ export default function About() {
         {/* <img src='/desk.png' alt='Isometric Dylan' className='desk' /> */}
       </div>
       <Typography sx={{ textDecoration: "none" }} variant='h3'>
-        <a className='linked' href='/#/overview'>
-          Dylan Kotzer
-        </a>
+        Dylan Kotzer
       </Typography>
 
       <p className='gptText'>Full Stack Developer</p>
-      <a href='/Dylan_Kotzer.pdf'>
+      {/* <a href='/Dylan_Kotzer.pdf'>
         <button className='fa fa-download'>View Resume</button>
-      </a>
+      </a> */}
       <div className=''>
         <p className='gptText'>
           {" "}
@@ -126,26 +124,15 @@ export default function About() {
           If you get links that are not clickable, try asking DylanGPT to "fix
           the links please"
         </p>
-        {/* <div className='exampleHolder'>
-              <div onClick={copyText} className='copyBtn' id='ex3'></div>
-              <p className='examples example3 ex3' onClick={showExample}>
-                Code hello world in 5 random programming languages. test test
-                Code hello world in 5 random programming languages. test test
-                Code hello world in 5 random programming languages. test test
-                Code hello world in 5 random programming languages. test test
-                Code hello world in 5 random programming languages. test test
-              </p>
-            </div> 
-          </div>*/}
       </div>
       <p>
-        If you are tired of chat bots you can browse all the same information
-        here on my portfolio site by using the top or side navigation menu, or
-        click below to view my resume.{" "}
+        If you are tired of chat bots you can browse all the same information on
+        the <a href='/#/overview'>overview page</a>, or view{" "}
+        <a href='/Dylan_Kotzer.pdf'>my resume. </a>
       </p>
-      <a href='/Dylan_Kotzer.pdf'>
+      {/* <a href='/Dylan_Kotzer.pdf'>
         <button className='fa fa-download'>View Resume</button>
-      </a>
+      </a> */}
     </section>
   );
 }

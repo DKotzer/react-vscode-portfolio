@@ -207,7 +207,6 @@ button:hover {
   background-color: #40414f;
   border: 2px solid rgba(103, 105, 129, 0.678);
   border-radius: 25px;
-  cursor: pointer;
   display: inline-block;
   font-size: 1rem;
   font-weight: 600;
@@ -222,8 +221,11 @@ button:hover {
   position: relative;
 }
 
+.ex2 {
+  cursor: pointer;
+}
+
 .examples:hover {
-  scale: 105%;
   outline: 3px solid white;
 }
 

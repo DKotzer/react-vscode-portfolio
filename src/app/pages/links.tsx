@@ -1,8 +1,6 @@
-import {
-  FaGithub,
-  FaLinkedin,
-  FaEnvelope,
-} from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+
+import { VscFilePdf } from "react-icons/vsc";
 
 export const links = [
   {
@@ -22,5 +20,11 @@ export const links = [
     title: "Contact me via email",
     href: "mailto:dylankotzer@gmail.com",
     icon: <FaEnvelope />,
+  },
+  {
+    index: 3,
+    title: "View Resume",
+    href: "/Dylan_Kotzer.pdf",
+    icon: <VscFilePdf />,
   },
 ];

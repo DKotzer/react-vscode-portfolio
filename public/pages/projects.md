@@ -29,13 +29,27 @@
 
 <div class="markdown-img">
 
-![DCrypto](https://raw.githubusercontent.com/DKotzer/DTrade/main/images/buy.png)
+<video  src="https://i.imgur.com/XpY6J3I.mp4" autoplay loop muted></video>
 
 </div>
 
 - Crypto trading app that allows you to trade crypto in real time with practice money via API calls to the kraken exchange for real time price updates.
 - Built with: Node, Vanilla JavaScript, MongoDB, CryptoCurrency eXchange TradingAPI
 - [GitHub Repo](https://github.com/DKotzer/DTrade)
+
+## [CoffeeBot](https://gryphhacks-2022.devpost.com/project-gallery) (TheTester@gmail.com/100Tester) 🔗
+
+<div class="markdown-img">
+
+<video  src="https://i.imgur.com/O5xuDnt.mp4
+" autoplay loop muted></video>
+
+</div>
+
+- Winner of best Discord Bot at Gryph Hacks Hackathon 2022. A discord bot that can split up a room in to different groups based on user input, with a number of additional features like scheduling meetings.
+
+- Built with: Node, Discord.js, Javascript, Discord.
+- [GitHub Repo](https://github.com/DKotzer/discord-bot-hackathon)
 
 ## [3D World](https://threedworld.herokuapp.com) (TheTester/100Tester) 🔗
 

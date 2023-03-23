@@ -8,7 +8,7 @@
 
 </div>
 
-- Was hired at General Assembly as a Instructional Associate after completeing their software engineering immersive bootcamp.
+- Was hired at General Assembly as a Instructional Associate after completing their software engineering immersive bootcamp.
 - _**Technologies used:**_ Python, React.js, Django, Node, Express, JavaScript, MongoDB, PostgreSQL
 
 &nbsp;
@@ -17,7 +17,7 @@
 
 <div class="markdown-logo">
 
-![Dr Anne Hussain](https://i.imgur.com/FA3tzU0.png)
+![Dr Anne Hussain](https://i.imgur.com/VUgaYTT.png)
 
 </div>
 
