@@ -41,10 +41,6 @@ p {
   animation: ease-in-out;
 }
 
-.desk {
-  max-width: 90%;
-}
-
 .desk:hover {
   scale: 105%;
 }
@@ -55,11 +51,11 @@ p {
 
 .gpt-link {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-  font-weight: 400;
+  font-weight: 800;
   font-size: 3rem;
   line-height: 1.167;
   letter-spacing: 0em;
-  margin-top: -13px;
+  margin-top: -23px;
   text-decoration: none;
   color: white;
 }

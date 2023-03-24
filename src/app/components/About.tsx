@@ -1,4 +1,6 @@
 import { Typography } from "@mui/material";
+import { useEffect, useRef } from "react";
+import Typed from "typed.js";
 
 export default function About() {
   const showExample = async (e: any) => {
@@ -19,6 +21,25 @@ export default function About() {
       e.target.className = "examples example2";
     }
   };
+  const typing = useRef(null);
+
+  useEffect(() => {
+    const typed = new Typed(typing.current, {
+      strings: [
+        "Full Stack Developer",
+        "Prompt Engineer",
+        `Check out DylanGPT, the portfolio site of the future`,
+        "Read below to find out more",
+      ],
+      typeSpeed: 50,
+      loop: true,
+    });
+
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  }, []);
 
   const copyText = (e: any) => {
     e.preventDefault();
@@ -30,7 +51,6 @@ export default function About() {
   // Copy the text to the clipboard navigator.clipboard.writeText(text);
 
   // Alert the user that the text was copied alert("Copied to clipboard!"); }
-
   return (
     <section id='about'>
       <div className='full'>
@@ -38,10 +58,14 @@ export default function About() {
         {/* <img src='/desk.png' alt='Isometric Dylan' className='desk' /> */}
       </div>
       <Typography sx={{ textDecoration: "none" }} variant='h3'>
-        Dylan Kotzer
+        Hi, I'm Dylan Kotzer
       </Typography>
-
-      <p className='gptText'>Full Stack Developer</p>
+      <div className='typed'>
+        <h2>
+          <span ref={typing}></span>
+        </h2>
+      </div>
+      {/* <p className='gptText'>Full Stack Developer</p> */}
       {/* <a href='/Dylan_Kotzer.pdf'>
         <button className='fa fa-download'>View Resume</button>
       </a> */}
@@ -66,7 +90,6 @@ export default function About() {
           <a href='https://gpt.dylankotzer.com/'>DylanGPT</a> to get a better
           understanding of my qualifications and fit for your organization.{" "}
         </p>
-
         <div className='desk'>
           <a href='https://gpt.dylankotzer.com'>
             <img src='/chatbot.png' alt='DylanGPT' />
@@ -107,7 +130,7 @@ export default function About() {
         <div className='exampleHolder'>
           <div onClick={copyText} className='copyBtn' id='21'></div>
           <p className='examples example2 21'>
-            {`Tell me how how Dylan's previous projects relate to these ideas`}
+            {`Tell me how how Dylan's previous projects relate to these ideas.`}
           </p>
         </div>
         <p>
@@ -121,15 +144,15 @@ export default function About() {
           </p>
         </div>
         <p>
-          If you get links that are not clickable, try asking DylanGPT to "fix
-          the links please"
+          If you get links that are not clickable, or code as a response, try
+          asking DylanGPT to "fix the links please"
+        </p>
+        <p>
+          If you are tired of chat bots you can browse all the same information
+          on the <a href='/#/overview'>overview page</a>, or view{" "}
+          <a href='/Dylan_Kotzer.pdf'>my resume. </a>
         </p>
       </div>
-      <p>
-        If you are tired of chat bots you can browse all the same information on
-        the <a href='/#/overview'>overview page</a>, or view{" "}
-        <a href='/Dylan_Kotzer.pdf'>my resume. </a>
-      </p>
       {/* <a href='/Dylan_Kotzer.pdf'>
         <button className='fa fa-download'>View Resume</button>
       </a> */}

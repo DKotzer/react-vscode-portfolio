@@ -87,6 +87,7 @@ export default function App() {
     },
   });
 
+  
   function handleThemeChange() {
     setDarkMode(!darkMode);
     localStorage.setItem("theme", darkMode ? "light" : "dark");
@@ -247,3 +248,4 @@ export default function App() {
     </ThemeProvider>
   );
 }
+
