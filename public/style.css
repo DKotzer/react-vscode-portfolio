@@ -317,6 +317,7 @@ video {
   padding: 7px 10px;
   border-radius: 8px;
   font-size:large;
+  z-index: 56;
 
 }
 /* .chatButton:hover ~ .chatInfo {
