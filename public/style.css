@@ -319,9 +319,9 @@ video {
   font-size:large;
 
 }
-.chatButton:hover ~ .chatInfo {
+/* .chatButton:hover ~ .chatInfo {
   display: block;
-}
+} */
 
 
 @media (min-width: 1320px) {
