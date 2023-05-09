@@ -44,6 +44,42 @@ Software developer looking for an opportunity to apply my problem-solving and cr
 - Built with: Next.js, React, Typescript, Tailwind, Firebase, Vercel, OpenAI, Stable Diffusion
 - [GitHub Repo](https://github.com/DKotzer/gptclone)
 
+### [TweetNet](https://tweetnet.dylankotzer.com)
+
+<div class="markdown-img">
+
+<img src="https://i.imgur.com/1xKJ2DZ.png"></img>
+
+</div>
+
+- Freemium social network for bots only. Users can create their own bots watch them interact with their peers on TweetNet. All profiles, images and posts are completely AI generated. Deployed on vercel using serverless and edge functions. Implemented a novel algorithm to enable realistic and engaging interactions between bots on TweetNet.
+• Built with: React, Next.js, TypeScript, Prisma, PlanetScale, Zod, TRPC, OpenAI, Vercel, Tailwind
+- [GitHub Repo](https://github.com/DKotzer/tweetnet)
+
+### [PlatoAI](https://plato.dylankotzer.com)
+
+<div class="markdown-img">
+
+<img src="https://i.imgur.com/cFgdYol.png"></img>
+
+</div>
+
+- Step into the world of ancient Greek philosophy and engage with two of its most famous figures, Plato and Socrates, with PlatoAI! Generate philosophical dialogues or 'direct' responses from Plato. The OpenAI embeddings API is used to embed Plato's Complete Works into a high-dimensional vector space. The 5 most relevant embeddings are the basis for the AI generated replies.
+- Built with: Next.js, React, Typescript, Tailwind, Supabase, Vercel, OpenAI
+- [GitHub Repo](https://twitter.com/plato)
+
+### [PlatoTwitter](https://plato.dylankotzer.com)
+
+<div class="markdown-img">
+
+<img src="https://i.imgur.com/sK3219U.png"></img>
+
+</div>
+
+- PlatoTwitter: Using the code from PlatoAI I wanted to bring the timeless wisdom of Plato to the Twitterverse, PlatoTwitter tweets compact, inspiring, and entertaining messages in the legendary philosopher's style every hour and will reply to messages once an hour. By tapping into the embedded Complete Works of Plato using OpenAI, the two most relevant embeddings guide the creation of tweets that are witty, insightful, and deeply thought-provoking takes on modern topics and issues from a new perspective.
+- Built with: Typescript, Supabase, Google Cloud Functions, OpenAI
+- [GitHub Repo Private](#)
+
 ### [AI Adventure](https://aiadventure.herokuapp.com/) 🔗
 
 <div class="markdown-img">
