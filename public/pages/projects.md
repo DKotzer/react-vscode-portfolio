@@ -73,7 +73,7 @@
 **Technologies used:** Node, Vanilla JavaScript, MongoDB, CryptoCurrency eXchange TradingAPI
 **Links:** [GitHub Repo](https://github.com/DKotzer/DTrade) | [Live Deployment](https://dcrypto-app.herokuapp.com)
 
-## [CoffeeBot: The best Discord bot for group chats and meetings ☕](https://gryphhacks-2022.devpost.com/project-gallery) (TheTester@gmail.com/100Tester) 
+## [CoffeeBot: The best Discord bot for group chats and meetings ☕](https://gryphhacks-2022.devpost.com/project-gallery) 
 
 <div class="markdown-img">
 
