@@ -258,16 +258,13 @@ export default function App() {
                 <a
                   href='https://gpt.dylankotzer.com'
                   target='_blank'
+                  rel='noreferrer'
                   className='chatButton'
                 >
                   <BsFillChatDotsFill size={30} />
                 </a>
               </div>
-              <div
-                className='chatInfo'
-              >
-                Chat with Dylan GPT
-              </div>
+              <div className='chatInfo'>Chat with Dylan GPT</div>
             </div>
           </Grid>
 
