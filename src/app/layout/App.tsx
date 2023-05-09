@@ -6,7 +6,7 @@ import {
   Grid,
   Stack,
   ThemeProvider,
-  Typography,
+  Typography
 } from "@mui/material";
 import { useEffect, useState } from "react";
 import AppTree from "./AppTree";
@@ -19,6 +19,7 @@ import Home from "../pages/Home";
 import { pages } from "../pages/pages";
 import usePageTracking from "../hooks/usePageTracking";
 import { isBrowser } from "react-device-detect";
+import {BsFillChatDotsFill} from "react-icons/bs";
 
 interface Page {
   index: number;
@@ -239,13 +240,47 @@ export default function App() {
               </Grid>
             </Grid>
           </Grid>
+          <Grid item>
+            <div style={{ position: "fixed", bottom: 20, right: 25 }}>
+              {/* Add your chatbot component here */}
+              <div
+                className='chatButton'
+                style={{
+                  padding: "15px",
+                  backgroundColor: "#3f51b5",
+                  color: "white",
+                  borderRadius: "50%",
+                  cursor: "pointer",
+                  marginRight: "30px",
+                  marginBottom: "15px",
+                }}
+              >
+                <a
+                  href='https://gpt.dylankotzer.com'
+                  target='_blank'
+                  className='chatButton'
+                >
+                  <BsFillChatDotsFill size={30} />
+                </a>
+              </div>
+              <div
+                className='chatInfo'
+              >
+                Chat with Dylan GPT
+              </div>
+            </div>
+          </Grid>
+
           <Grid item lg={12} md={12} sm={12} xs={12}>
             <Footer />
           </Grid>
+
+          {/* Add chatbot box here */}
         </Grid>
       </Container>
       {/* </Router> */}
     </ThemeProvider>
   );
 }
+
 
