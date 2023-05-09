@@ -237,7 +237,7 @@ p {
   padding-top: 0px !important;
   font-size: x-small;
   padding-bottom: 0px !important;
-  z-index: 55;
+  z-index: 2;
   top: 0.1rem;
   background-color: #40414f;
   border: 2px solid rgba(103, 105, 129, 0.329);
@@ -294,7 +294,7 @@ video {
 }
 
 
-.chatButton {
+/* .chatButton {
   text-decoration:none;
   color: white;
   display: none;
@@ -317,12 +317,12 @@ video {
   padding: 7px 10px;
   border-radius: 8px;
   font-size:large;
-  z-index: 56;
+  z-index: 5;
 
 }
-/* .chatButton:hover ~ .chatInfo {
+.chatButton:hover ~ .chatInfo {
   display: block;
-} */
+}
 
 
 @media (min-width: 1320px) {
@@ -330,4 +330,4 @@ video {
     display: block;
   }
 
-}
+} */

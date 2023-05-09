@@ -240,9 +240,8 @@ export default function App() {
               </Grid>
             </Grid>
           </Grid>
-          <Grid item>
+          {/* <Grid item>
             <div style={{ position: "fixed", bottom: 20, right: 15 }}>
-              {/* Add your chatbot component here */}
               <div
                 className='chatButton'
                 style={{
@@ -264,9 +263,8 @@ export default function App() {
                   <BsFillChatDotsFill size={25} />
                 </a>
               </div>
-              {/* <div className='chatInfo'>Chat with Dylan GPT</div> */}
             </div>
-          </Grid>
+          </Grid> */}
 
           <Grid item lg={12} md={12} sm={12} xs={12}>
             <Footer />
