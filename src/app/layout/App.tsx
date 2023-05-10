@@ -263,6 +263,7 @@ export default function App() {
                   <BsFillChatDotsFill size={25} />
                 </a>
               </div>
+              <div className='chatInfo'>Chat with Dylan GPT</div>
             </div>
           </Grid>
 
