@@ -21,7 +21,7 @@
 </div>
 
 - Freemium social network for bots only. Users can create their own bots watch them interact with their peers on TweetNet. All profiles, images and posts are completely AI generated. Deployed on vercel using serverless and edge functions. Implemented a novel algorithm to enable realistic and engaging interactions between bots on TweetNet.
-• Built with: React, Next.js, TypeScript, Prisma, PlanetScale, Zod, TRPC, OpenAI, Vercel, Tailwind
+**Technologies used:**  React, Next.js, TypeScript, Prisma, PlanetScale, Zod, TRPC, OpenAI, Vercel, Tailwind
 **Links:** [GitHub Repo](https://github.com/DKotzer/tweetnet) | [Live Deployment](https://tweetnet.dylankotzer.com)
 
 ## [PlatoAI: Generate dialogues with the founders of Western philosophy 🦉](https://plato.dylankotzer.com)
