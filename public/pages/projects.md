@@ -61,7 +61,7 @@
 **Technologies used:** Node, MongoDB, React.js, Express, JavaScript, AWS, GPT3 OpenAI API
 **Links:** [GitHub Repo](https://github.com/jontoye/ai-adventure) | [Live Deployment](https://aiadventure.herokuapp.com/)
 
-## [DCrypto: The ultimate crypto trading simulator 🎮](https://dcrypto-app.herokuapp.com) (TheTester@gmail.com/100Tester) 
+## [DCrypto: The ultimate crypto trading simulator 🎮](https://dcrypto.dylankotzer.com/) (TheTester@gmail.com/100Tester) 
 
 <div class="markdown-img">
 
@@ -71,7 +71,7 @@
 
 - DCrypto is a game that lets you trade crypto with virtual money using real-time data from the kraken exchange. You can trade various cryptocurrencies, view charts and indicators, and track your portfolio performance. You can learn the basics of crypto trading and develop your skills and strategies. You can experience the thrill and challenge of crypto trading with DCrypto
 **Technologies used:** Node, Vanilla JavaScript, MongoDB, CryptoCurrency eXchange TradingAPI
-**Links:** [GitHub Repo](https://github.com/DKotzer/DTrade) | [Live Deployment](https://dcrypto-app.herokuapp.com)
+**Links:** [GitHub Repo](https://github.com/DKotzer/DTrade) | [Live Deployment](https://dcrypto.dylankotzer.com/)
 
 ## [CoffeeBot: The best Discord bot for group chats and meetings ☕](https://gryphhacks-2022.devpost.com/project-gallery) 
 
@@ -87,7 +87,7 @@
 **Technologies used:** Node, Discord.js, Javascript, Discord.
 **Links:** [GitHub Repo](https://github.com/DKotzer/discord-bot-hackathon)
 
-## [3D World: Share and explore 3D models with ease 🌎](https://threedworld.herokuapp.com) (TheTester/100Tester) 
+## [3D World: Share and explore 3D models with ease 🌎](https://3d-world.dylankotzer.com/) (TheTester/100Tester) 
 
 <div class="markdown-img">
 
@@ -99,10 +99,10 @@
 - It uses AWS S3 buckets to store/serve the models
 - Uses Google model viewer API to view and interact with the models, including AR mode.
 **Technologies used:** Python, Django, JavaScript, AWS, Model Viewer API
-**Links:** [GitHub Repo](https://github.com/DKotzer/3d-models-site) | [Live Deployment](https://threedworld.herokuapp.com)
+**Links:** [GitHub Repo](https://github.com/DKotzer/3d-models-site) | [Live Deployment](https://3d-world.dylankotzer.com/)
 
 
-## [Exile Builder: Plan your character with real-time data from Path of Exile 📊](https://exile-builder.herokuapp.com) (TheTester/100Tester)
+## [Exile Builder: Plan your character with real-time data from Path of Exile 📊](https://exile.dylankotzer.com/) (TheTester/100Tester)
 
 <div class="markdown-img">
 
@@ -112,4 +112,4 @@
 
 - Character builder for the game Path of Exile. It uses the path of exile API to get real time data on the items and prices/images
 **Technologies used:** Python, Django, JavaScript, Path of Exile API
-**Links:** [GitHub Repo](https://github.com/DKotzer/poe-collection) | [Live Deployment](https://exile-builder.herokuapp.com)
+**Links:** [GitHub Repo](https://github.com/DKotzer/poe-collection) | [Live Deployment](https://exile.dylankotzer.com/)
