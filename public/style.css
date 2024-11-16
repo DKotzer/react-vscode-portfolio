@@ -210,7 +210,6 @@ button:hover {
   padding: 0.5rem 0.75rem;
   transition: all 0.2s;
   text-decoration: none;
-  /* text-align: center; */
   vertical-align: middle;
   width: 100%;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -269,8 +268,25 @@ p {
 }
 
 .markdown-img p img,
+.markdown-img img,
 video {
-  max-width: 99%;
+  max-width: 900px;
+  width: 100%;
+  display: block;
+  margin: 2rem auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.certificate-container {
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+.certificate-container img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .css-1oqqzyl-MuiContainer-root {
@@ -293,19 +309,16 @@ video {
   max-width: 960px;
 }
 
-
 .chatButton {
   text-decoration:none;
   color: white;
   display: none;
-   
 }
 
 .chatButton:hover {
   scale:calc(105%);
   color: rgb(116, 233, 116);
 }
-
 
 .chatInfo {
   position: fixed;
@@ -318,16 +331,14 @@ video {
   border-radius: 8px;
   font-size:large;
   z-index: 5;
-
 }
+
 .chatButton:hover ~ .chatInfo {
   display: block;
 }
-
 
 @media (min-width: 1320px) {
   .chatButton {
     display: block;
   }
-
 }
