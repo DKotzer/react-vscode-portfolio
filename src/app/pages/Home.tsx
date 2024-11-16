@@ -1,7 +1,7 @@
 import { Grid } from "@mui/material";
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import About from "../components/About";
+import HomePage from "./HomePage";
 
 interface Props {
   setSelectedIndex: React.Dispatch<React.SetStateAction<number>>;
@@ -15,7 +15,7 @@ export default function Home({ setSelectedIndex }: Props) {
   }, [setSelectedIndex]);
 
   useEffect(() => {
-    document.title = process.env.REACT_APP_NAME!;
+    document.title = 'Dylan';
   }, [pathname]);
 
   return (
@@ -25,7 +25,7 @@ export default function Home({ setSelectedIndex }: Props) {
       direction='column'
       sx={{ minHeight: `calc(100vh - 20px - 33px)` }}
     >
-      <About />
+      <HomePage />
     </Grid>
   );
 }
