@@ -20,11 +20,14 @@ import { pages } from "../pages/pages"
 import usePageTracking from "../hooks/usePageTracking"
 import { isBrowser } from "react-device-detect"
 import { BsFillChatDotsFill } from "react-icons/bs"
-
+import About from "../components/About"
+import Resume from "../components/Resume"
+import Calendly from "../components/Calendly"
 interface Page {
   index: number
   name: string
   route: string
+  type: string
 }
 
 console.log(
@@ -216,20 +219,27 @@ export default function App() {
                     path='/'
                     element={<Home setSelectedIndex={setSelectedIndex} />}
                   />
-                  {pages.map(({ index, name, route }) => (
+                  {pages.map(({ index, name, route, type }) => (
                     <Route
                       key={index}
                       path={route}
                       element={
-                        <MDContainer
-                          path={`./pages/${name.substring(
-                            0,
-                            name.lastIndexOf(".")
-                          )}.md`}
-                        />
+                        type === "md" ? (
+                          <MDContainer
+                            path={`./pages/${name.substring(
+                              0,
+                              name.lastIndexOf(".")
+                            )}.md`}
+                          />
+                        ) : type === "resume" ? (
+                          <Resume />
+                        ) : type === "calendly" ? (
+                          <Calendly />
+                        ) : null
                       }
                     />
                   ))}
+              
 
                   {/* <Route
                     path='/'

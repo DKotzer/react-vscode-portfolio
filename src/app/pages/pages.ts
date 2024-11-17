@@ -7,14 +7,55 @@ import {
   SiJavascript,
   SiReact,
   SiNextdotjs,
+  
 } from "react-icons/si";
 
+import { FaRegFilePdf } from "react-icons/fa"
+
 export const pages = [
-  { index: 0, name: "overview.md", route: "/overview", icon: SiNextdotjs },
-  { index: 1, name: "skills.jsx", route: "/skills", icon: SiReact },
-  { index: 2, name: "experience.js", route: "/experience", icon: SiJavascript },
-  { index: 3, name: "education.ts", route: "/education", icon: SiTypescript },
-  { index: 4, name: "projects.py", route: "/projects", icon: SiPython },
+  {
+    index: 0,
+    name: "overview.md",
+    route: "/overview",
+    icon: SiNextdotjs,
+    type: "md",
+  },
+  { index: 1, name: "skills.jsx", route: "/skills", icon: SiReact, type: "md" },
+  {
+    index: 2,
+    name: "experience.js",
+    route: "/experience",
+    icon: SiJavascript,
+    type: "md",
+  },
+  {
+    index: 3,
+    name: "education.ts",
+    route: "/education",
+    icon: SiTypescript,
+    type: "md",
+  },
+  {
+    index: 4,
+    name: "projects.py",
+    route: "/projects",
+    icon: SiPython,
+    type: "md",
+  },
+  {
+    index: 5,
+    name: "resume.pdf",
+    route: "/resume",
+    icon: FaRegFilePdf,
+    type: "resume",
+  },
+  {
+    index: 6,
+    name: "calendly.html",
+    route: "/calendly",
+    icon: SiHtml5,
+    type: "calendly",
+  },
   // {
   //   index: 5,
   //   name: "certificates.html",
@@ -22,5 +63,4 @@ export const pages = [
   //   icon: SiHtml5,
   // },
   // { index: 6, name: "awards.css", route: "/awards", icon: SiCss3 },
-  // { index: 7, name: "resume.pdf", route: "/Dylan_Kotzer.pdf" },
-];
+]

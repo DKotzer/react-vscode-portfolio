@@ -336,6 +336,9 @@ video {
 .chatButton:hover ~ .chatInfo {
   display: block;
 }
+.calendly-inline-widget {
+  background-color: #252525;
+}
 
 @media (min-width: 1320px) {
   .chatButton {
