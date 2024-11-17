@@ -33,7 +33,6 @@ const Resume: React.FC<ResumeProps> = ({ darkMode, handleThemeChange }) => {
   return (
     <div>
       <div>test test test</div>
-      <ThemeProvider theme={theme}>
         <object
           data='/dylan_kotzer.pdf'
           type='application/pdf'
@@ -47,7 +46,6 @@ const Resume: React.FC<ResumeProps> = ({ darkMode, handleThemeChange }) => {
             <a href='/dylan_kotzer.pdf'>Download the PDF</a>
           </p>
         </object>
-      </ThemeProvider>
     </div>
   )
 }
