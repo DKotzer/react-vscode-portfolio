@@ -231,9 +231,7 @@ export default function App() {
                               name.lastIndexOf(".")
                             )}.md`}
                           />
-                        ) : type === "resume" ? (
-                          <Resume />
-                        ) : type === "calendly" ? (
+                        )  : type === "calendly" ? (
                           <Calendly />
                         ) : null
                       }

@@ -43,16 +43,16 @@ export const pages = [
   },
   {
     index: 5,
-    name: "resume.pdf",
-    route: "/resume",
-    icon: FaRegFilePdf,
-    type: "resume",
-  },
-  {
-    index: 6,
     name: "calendly.html",
     route: "/calendly",
     icon: SiHtml5,
     type: "calendly",
   },
+  // {
+  //   index: 6,
+  //   name: "resume.pdf",
+  //   route: "/resume",
+  //   icon: FaRegFilePdf,
+  //   type: "resume",
+  // },
 ]
