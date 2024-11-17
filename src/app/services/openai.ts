@@ -4,7 +4,7 @@ export const generateStreamingResponse = async (
 ): Promise<void> => {
   try {
     const response = await fetch(
-      "http://ai-backend-git-main-dkotzer-s-team.vercel.app/api/openai/stream",
+      "https://ai-backend-git-main-dkotzer-s-team.vercel.app/api/openai/stream",
       {
         method: "POST",
         headers: {

@@ -33,13 +33,13 @@ interface MatrixMessageProps {
   onComplete: () => void
 }
 
-// External variable to track how many times the component has been used
-let usageCount = 0
+let usageCount = 0 // Track how many times the component has been used
 
 const initialState = (startIndex: number) => ({
   displayText: "",
   currentMessageIndex: startIndex,
   isDeleting: false,
+  isRunning: false,
 })
 
 const reducer = (state: any, action: any) => {
@@ -50,10 +50,16 @@ const reducer = (state: any, action: any) => {
       return { ...state, isDeleting: !state.isDeleting }
     case "NEXT_MESSAGE":
       return {
+        ...state,
         displayText: "",
         currentMessageIndex: (state.currentMessageIndex + 1) % action.payload,
         isDeleting: false,
+        isRunning: false,
       }
+    case "SET_RUNNING":
+      return { ...state, isRunning: true }
+    case "SET_COMPLETE":
+      return { ...state, isRunning: false }
     default:
       return state
   }
@@ -61,10 +67,14 @@ const reducer = (state: any, action: any) => {
 
 const MatrixMessage: React.FC<MatrixMessageProps> = ({ onComplete }) => {
   const messages = [
+    "DylanGPT has you...",
     "Follow the white rabbit...",
     "Start by hiring Dylan.",
-    "Your next step.",
+    "Contact Dylan...",
+    "What are you waiting for?",
   ]
+
+  // Set the initial index using a function to avoid misuse of state
   const [state, dispatch] = useReducer(
     reducer,
     initialState(usageCount % messages.length)
@@ -73,10 +83,7 @@ const MatrixMessage: React.FC<MatrixMessageProps> = ({ onComplete }) => {
   useEffect(() => {
     let timeout: NodeJS.Timeout
     const currentMessage = messages[state.currentMessageIndex]
-
-    // console.log("Current Message Index:", state.currentMessageIndex);
-    // console.log("Display Text:", state.displayText);
-    // console.log("Is Deleting:", state.isDeleting);
+    if(state.isRunning) return
 
     if (!state.isDeleting && state.displayText.length < currentMessage.length) {
       timeout = setTimeout(() => {
@@ -89,11 +96,9 @@ const MatrixMessage: React.FC<MatrixMessageProps> = ({ onComplete }) => {
       !state.isDeleting &&
       state.displayText.length === currentMessage.length
     ) {
-      //   console.log("Message fully typed. Ready to delete after pause.");
       timeout = setTimeout(() => {
         dispatch({ type: "TOGGLE_DELETING" })
-        // console.log("Switching to deleting mode");
-      }, 300) // Change this to the desired pause duration
+      }, 200) // Pause duration
     } else if (state.isDeleting && state.displayText.length > 0) {
       timeout = setTimeout(() => {
         dispatch({
@@ -102,9 +107,9 @@ const MatrixMessage: React.FC<MatrixMessageProps> = ({ onComplete }) => {
         })
       }, 30)
     } else if (state.isDeleting && state.displayText.length === 0) {
-      //   console.log("Message fully deleted");
-      dispatch({ type: "NEXT_MESSAGE", payload: messages.length })
-      //   console.log("Switching to next message");
+      dispatch({ type: "SET_COMPLETE" })
+      usageCount++
+      //   dispatch({ type: "NEXT_MESSAGE", payload: messages.length })
     }
 
     return () => clearTimeout(timeout)
@@ -115,11 +120,6 @@ const MatrixMessage: React.FC<MatrixMessageProps> = ({ onComplete }) => {
     messages,
     onComplete,
   ])
-
-  // Increment the usage count each time the component is mounted
-  useEffect(() => {
-    usageCount++
-  }, [])
 
   return (
     <MatrixContainer>
