@@ -31,22 +31,24 @@ const Resume: React.FC<ResumeProps> = ({ darkMode, handleThemeChange }) => {
     },
   })
   return (
-    <div>test test test</div>
-    // <ThemeProvider theme={theme}>
-    //     <object
-    //       data='/dylan_kotzer.pdf'
-    //       type='application/pdf'
-    //       width='100%'
-    //       height='100%'
-    //       aria-labelledby='PDF document'
-    //       title='Embedded PDF Viewer'
-    //     >
-    //       <p>
-    //         Your browser does not support PDFs.
-    //         <a href='/dylan_kotzer.pdf'>Download the PDF</a>
-    //       </p>
-    //     </object>
-    // </ThemeProvider>
+    <div>
+      <div>test test test</div>
+      <ThemeProvider theme={theme}>
+        <object
+          data='/dylan_kotzer.pdf'
+          type='application/pdf'
+          width='100%'
+          height='100%'
+          aria-labelledby='PDF document'
+          title='Embedded PDF Viewer'
+        >
+          <p>
+            Your browser does not support PDFs.
+            <a href='/dylan_kotzer.pdf'>Download the PDF</a>
+          </p>
+        </object>
+      </ThemeProvider>
+    </div>
   )
 }
 
