@@ -171,8 +171,7 @@ export default function App() {
                   >
                     EXPLORER
                   </Typography>
-                  //TODO: Modify app tree to have an src/app folder and more
-                  pages
+                  {/* TODO: Modify app tree to have an src/app folder and more pages*/}
                   <AppTree
                     pages={pages}
                     selectedIndex={selectedIndex}
