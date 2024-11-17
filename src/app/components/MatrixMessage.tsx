@@ -47,12 +47,15 @@ const reducer = (state: any, action: any) => {
     case "UPDATE_TEXT":
       return { ...state, displayText: action.payload }
     case "TOGGLE_DELETING":
-      return { ...state, isDeleting: !state.isDeleting }
+      return {
+        ...state,
+        isDeleting: !state.isDeleting,
+        currentMessageIndex: (state.currentMessageIndex + 1) % action.payload,
+      }
     case "NEXT_MESSAGE":
       return {
         ...state,
         displayText: "",
-        currentMessageIndex: (state.currentMessageIndex + 1) % action.payload,
         isDeleting: false,
         isRunning: false,
       }
@@ -107,7 +110,7 @@ const MatrixMessage: React.FC<MatrixMessageProps> = ({ onComplete }) => {
         })
       }, 30)
     } else if (state.isDeleting && state.displayText.length === 0) {
-      dispatch({ type: "SET_COMPLETE" })
+    //   dispatch({ type: "SET_COMPLETE" })
       usageCount++
       //   dispatch({ type: "NEXT_MESSAGE", payload: messages.length })
     }
