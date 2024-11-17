@@ -7,8 +7,7 @@ import {
   SiJavascript,
   SiReact,
   SiNextdotjs,
-  
-} from "react-icons/si";
+} from "react-icons/si"
 
 import { FaRegFilePdf } from "react-icons/fa"
 
@@ -56,11 +55,4 @@ export const pages = [
     icon: SiHtml5,
     type: "calendly",
   },
-  // {
-  //   index: 5,
-  //   name: "certificates.html",
-  //   route: "/certificates",
-  //   icon: SiHtml5,
-  // },
-  // { index: 6, name: "awards.css", route: "/awards", icon: SiCss3 },
 ]
