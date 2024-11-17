@@ -241,10 +241,7 @@ export default function App() {
                   ))}
               
 
-                  {/* <Route
-                    path='/'
-                    element={<Home setSelectedIndex={setSelectedIndex} />}
-                  /> */}
+     
                   <Route path='*' element={<Navigate to='/' replace />} />
                 </Routes>
               </Grid>
