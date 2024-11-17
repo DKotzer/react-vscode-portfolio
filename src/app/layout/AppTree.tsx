@@ -89,6 +89,7 @@ export default function AppTree({
           setSelectedIndex(-1);
         }}
       >
+        
         {pages.map(({ index, name, route, icon }) => (
           <TreeItem
             key={index}
@@ -114,6 +115,7 @@ export default function AppTree({
           />
         ))}
       </TreeItem>
+      
     </TreeView>
   );
 }

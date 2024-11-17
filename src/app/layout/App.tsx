@@ -6,25 +6,25 @@ import {
   Grid,
   Stack,
   ThemeProvider,
-  Typography
-} from "@mui/material";
-import { useEffect, useState } from "react";
-import AppTree from "./AppTree";
-import Footer from "./Footer";
-import Sidebar from "./Sidebar";
-import { Routes, Route, useNavigate, Navigate } from "react-router-dom";
-import AppButtons from "./AppButtons";
-import MDContainer from "../components/MDContainer";
-import Home from "../pages/Home";
-import { pages } from "../pages/pages";
-import usePageTracking from "../hooks/usePageTracking";
-import { isBrowser } from "react-device-detect";
-import {BsFillChatDotsFill} from "react-icons/bs";
+  Typography,
+} from "@mui/material"
+import { useEffect, useState } from "react"
+import AppTree from "./AppTree"
+import Footer from "./Footer"
+import Sidebar from "./Sidebar"
+import { Routes, Route, useNavigate, Navigate } from "react-router-dom"
+import AppButtons from "./AppButtons"
+import MDContainer from "../components/MDContainer"
+import Home from "../pages/Home"
+import { pages } from "../pages/pages"
+import usePageTracking from "../hooks/usePageTracking"
+import { isBrowser } from "react-device-detect"
+import { BsFillChatDotsFill } from "react-icons/bs"
 
 interface Page {
-  index: number;
-  name: string;
-  route: string;
+  index: number
+  name: string
+  route: string
 }
 
 console.log(
@@ -42,29 +42,29 @@ console.log(
             "Y88P"                                                                                  
 `,
   "color:green"
-);
+)
 
 function initVisiblePageIndexes(pages: Page[]) {
-  const tabs = [];
+  const tabs = []
   for (let i = 0; i < pages.length; i++) {
-    const page = pages[i];
-    tabs.push(page.index);
+    const page = pages[i]
+    tabs.push(page.index)
   }
-  return tabs;
+  return tabs
 }
 
 export default function App() {
-  const navigate = useNavigate();
-  const [expanded, setExpanded] = useState(isBrowser);
-  const [selectedIndex, setSelectedIndex] = useState(-1);
-  const [currentComponent, setCurrentComponent] = useState("");
+  const navigate = useNavigate()
+  const [expanded, setExpanded] = useState(isBrowser)
+  const [selectedIndex, setSelectedIndex] = useState(-1)
+  const [currentComponent, setCurrentComponent] = useState("")
   const [visiblePageIndexes, setVisiblePageIndexes] = useState(
     initVisiblePageIndexes(pages)
-  );
-  const [darkMode, setDarkMode] = useState(false);
-  const [visiblePages, setVisiblePages] = useState(pages);
-  const paletteType = darkMode ? "dark" : "light";
-  usePageTracking();
+  )
+  const [darkMode, setDarkMode] = useState(false)
+  const [visiblePages, setVisiblePages] = useState(pages)
+  const paletteType = darkMode ? "dark" : "light"
+  usePageTracking()
   const theme = createTheme({
     palette: {
       mode: paletteType,
@@ -86,57 +86,56 @@ export default function App() {
         },
       },
     },
-  });
+  })
 
-  
   function handleThemeChange() {
-    setDarkMode(!darkMode);
-    localStorage.setItem("theme", darkMode ? "light" : "dark");
+    setDarkMode(!darkMode)
+    localStorage.setItem("theme", darkMode ? "light" : "dark")
   }
 
   useEffect(() => {
-    const currentTheme = localStorage.getItem("theme");
-    if (!currentTheme) setDarkMode(true);
-    else setDarkMode(currentTheme === "dark");
-  }, []);
+    const currentTheme = localStorage.getItem("theme")
+    if (!currentTheme) setDarkMode(true)
+    else setDarkMode(currentTheme === "dark")
+  }, [])
 
   const deletedIndex = visiblePages.find(
     (x) => !visiblePageIndexes.includes(x.index)
-  )?.index;
+  )?.index
 
   useEffect(() => {
-    const newPages = [];
+    const newPages = []
 
     for (const index of visiblePageIndexes) {
-      const page = pages.find((x) => x.index === index);
-      if (page) newPages.push(page);
+      const page = pages.find((x) => x.index === index)
+      if (page) newPages.push(page)
     }
-    setVisiblePages(newPages);
+    setVisiblePages(newPages)
 
     if (visiblePageIndexes.length === 0) {
-      setSelectedIndex(-1);
-      navigate("/");
+      setSelectedIndex(-1)
+      navigate("/")
     } else if (
       deletedIndex === selectedIndex &&
       deletedIndex > Math.max(...visiblePageIndexes)
     ) {
-      setSelectedIndex(Math.max(...visiblePageIndexes));
+      setSelectedIndex(Math.max(...visiblePageIndexes))
       const page = pages.find(
         (x) => x.index === Math.max(...visiblePageIndexes)
-      );
-      if (page) navigate(page.route);
+      )
+      if (page) navigate(page.route)
     } else if (
       deletedIndex === selectedIndex &&
       deletedIndex < Math.max(...visiblePageIndexes)
     ) {
-      setSelectedIndex(Math.min(...visiblePageIndexes));
+      setSelectedIndex(Math.min(...visiblePageIndexes))
       const page = pages.find(
         (x) => x.index === Math.min(...visiblePageIndexes)
-      );
-      if (page) navigate(page.route);
+      )
+      if (page) navigate(page.route)
     } else {
     }
-  }, [visiblePageIndexes, navigate, deletedIndex, selectedIndex]);
+  }, [visiblePageIndexes, navigate, deletedIndex, selectedIndex])
 
   return (
     <ThemeProvider theme={theme}>
@@ -172,6 +171,8 @@ export default function App() {
                   >
                     EXPLORER
                   </Typography>
+                  //TODO: Modify app tree to have an src/app folder and more
+                  pages
                   <AppTree
                     pages={pages}
                     selectedIndex={selectedIndex}
@@ -241,7 +242,7 @@ export default function App() {
             </Grid>
           </Grid>
           <Grid item>
-            <div style={{ position: "fixed", bottom: 20, right: 15 }}>
+            {/* <div style={{ position: "fixed", bottom: 20, right: 15 }}>
               <div
                 className='chatButton'
                 style={{
@@ -264,7 +265,7 @@ export default function App() {
                 </a>
               </div>
               <div className='chatInfo'>Chat with Dylan GPT</div>
-            </div>
+            </div> */}
           </Grid>
 
           <Grid item lg={12} md={12} sm={12} xs={12}>
@@ -276,7 +277,5 @@ export default function App() {
       </Container>
       {/* </Router> */}
     </ThemeProvider>
-  );
+  )
 }
-
-
