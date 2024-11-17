@@ -35,8 +35,6 @@ const Resume: React.FC<ResumeProps> = ({
       },
     })
   return (
-    <ThemeProvider theme={theme}>
-      <div className='do-not-overlap' style={{ width: "100%", height: "100%" }}>
         <object
           data='/dylan_kotzer.pdf'
           type='application/pdf'
@@ -50,8 +48,6 @@ const Resume: React.FC<ResumeProps> = ({
             <a href='/dylan_kotzer.pdf'>Download the PDF</a>
           </p>
         </object>
-      </div>
-    </ThemeProvider>
   )
 }
 
