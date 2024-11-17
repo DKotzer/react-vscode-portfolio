@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react"
 import { Message } from "../types/chat"
-import { generateResponse, generateStreamingResponse } from "../services/openai"
+import { generateStreamingResponse } from "../services/openai"
 
 const INITIAL_MESSAGE: Message = {
   content:
