@@ -1,135 +1,119 @@
 interface Response {
-  keywords: string[];
-  response: string;
+  keywords: string[]
+  response: string
 }
 
 export const responses: Response[] = [
   {
-    keywords: ['ai', 'artificial intelligence', 'machine learning', 'ml'],
-    response: `I specialize in AI integration and development, with expertise in:
-• LLM Integration (OpenAI, Azure OpenAI, Anthropic)
-• Custom AI Solutions and Implementations
-• Prompt Engineering and System Design
-• Multi-Agent AI Systems
-• RAG (Retrieval Augmented Generation)
-• Fine-tuning and Deploying LLMs
+    keywords: ["ai", "artificial intelligence", "machine learning", "ml"],
+    response: `I specialize in building custom AI solutions with a focus on:
 
-I've built various AI-powered applications, including DylanGPT, PlatoAI, and custom solutions for clients.`
+• LLM integration (OpenAI, Azure OpenAI, Anthropic)
+• Prompt engineering & system design
+• Retrieval-Augmented Generation (RAG)
+• Multi-agent AI systems
+• Fine-tuning and deploying models
+
+Some of my AI-driven projects include DylanGPT, PlatoAI, and various custom solutions for clients across different industries.`,
   },
   {
-    keywords: ['projects', 'portfolio', 'work'],
-    response: `Here are some of my notable projects:
+    keywords: ["projects", "portfolio", "work"],
+    response: `Here are a few standout projects I've developed:
 
-1. DylanGPT: A cutting-edge chatbot using OpenAI's GPT for portfolio interaction
-2. CamelCollect: Solo-developed content management system with Chrome extension
-3. TweetNet: Social network platform for AI-powered bot interactions
-4. PlatoAI: Philosophical dialogue generator using vector embeddings
-5. AI Adventure: Interactive storytelling platform with AI-generated content
+1. **DylanGPT** – A portfolio-interacting chatbot powered by OpenAI
+2. **CamelCollect** – A solo-built content manager with a Chrome extension
+3. **TweetNet** – A social network of AI-driven bots
+4. **PlatoAI** – An AI that simulates philosophical discussions with embeddings
+5. **AI Adventure** – Interactive storytelling with dynamic AI-generated content
 
-Each project showcases different aspects of my technical expertise and problem-solving abilities.`
+Each project highlights different areas of my technical expertise, creativity, and ability to ship end-to-end solutions.`,
   },
   {
-    keywords: ['tech stack', 'technologies', 'stack', 'tools'],
-    response: `My comprehensive tech stack includes:
+    keywords: ["tech stack", "technologies", "stack", "tools"],
+    response: `My development toolkit includes:
 
-Frontend:
-• React, Next.js, TypeScript
-• Tailwind CSS, Material-UI
-• Modern JavaScript
+**Frontend:**  
+• React, Next.js, TypeScript  
+• Tailwind CSS, Material UI  
 
-Backend:
-• Node.js, Express, Django
-• Python, TypeScript
-• TRPC, REST APIs
+**Backend:**  
+• Node.js, Express, Django  
+• REST APIs, TRPC  
 
-Databases:
-• PostgreSQL, MongoDB, Redis
-• Prisma, Drizzle ORMs
+**Databases & ORMs:**  
+• PostgreSQL, MongoDB, Redis  
+• Prisma, Drizzle  
 
-Cloud & DevOps:
-• AWS, Azure, Vercel
-• Docker, CI/CD
-• Microservice Architecture
+**DevOps & Cloud:**  
+• AWS, Azure, Vercel  
+• Docker, CI/CD pipelines  
 
-AI & ML:
-• OpenAI, Azure OpenAI, Anthropic
-• RAG Systems, Vector Databases
-• Custom AI Implementations`
+**AI & Machine Learning:**  
+• OpenAI, Azure OpenAI, Anthropic  
+• Vector databases, RAG, multi-agent systems`,
   },
   {
-    keywords: ['experience', 'work history', 'background'],
-    response: `My professional journey combines long-term programming experience with modern AI expertise:
+    keywords: ["experience", "work history", "background"],
+    response: `My background bridges full-stack development with over a decade in IT and DevOps.
 
-Current:
-• AI & Web Development Consultant (2023-Present)
-• Lead Developer at CamelCollect
-• Freelance AI Integration Specialist
+**Current Roles:**  
+• AI & Web Dev Consultant  
+• Lead Developer @ CamelCollect  
+• Freelance AI Systems Builder  
 
-Previous:
-• Software Developer at General Assembly
-• Web Developer for Healthcare Practice
-• IT Head at Major Retail Operation
+**Past Experience:**  
+• Web Developer in healthcare  
+• IT Lead at a large retail business  
+• Teaching Assistant at General Assembly  
 
-I've been programming since elementary school and have successfully transitioned from traditional IT to modern AI-enhanced development.`
+I’ve been programming since I was a kid—today, I focus on solving complex problems using modern tools and AI.`,
   },
   {
-    keywords: ['education', 'study', 'learning'],
-    response: `My educational background combines formal training with self-taught expertise:
+    keywords: ["education", "study", "learning"],
+    response: `My education blends formal training and self-driven learning:
 
-• Software Engineering Immersive at General Assembly (2021-2022)
-  - Formalized my long-standing programming experience
-  - Perfect timing for AI integration expertise
-
-• BA in Philosophy from McMaster University
-  - Strong foundation in logic and critical thinking
-  - Valuable for AI ethics and system design
-
-• Continuous Learning
-  - Self-taught programming since elementary school
-  - Regular upskilling in AI and modern development practices`
+• **General Assembly – Software Engineering Immersive**  
+   (Built on years of self-taught experience)  
+• **BA in Philosophy – McMaster University**  
+   (Sharp foundation in logic, ethics, and systems thinking)  
+• **Ongoing Self-Education**  
+   – Constantly learning new frameworks, dev tools, and AI systems`,
   },
   {
-    keywords: ['skills', 'capabilities', 'expertise'],
-    response: `My key skills span multiple domains:
+    keywords: ["skills", "capabilities", "expertise"],
+    response: `Here's what I bring to the table:
 
-Technical Skills:
-• Full-Stack Development
-• AI Integration & Development
-• Cloud Architecture
-• System Design
-• Database Management
-• API Development
+**Technical:**  
+• Full-Stack Web Development  
+• AI Integration & Architecture  
+• DevOps & Cloud Infrastructure  
+• API & Database Design  
 
-AI Specific:
-• Prompt Engineering
-• LLM Integration
-• RAG Systems
-• Multi-Agent Systems
-• Fine-Tuning Models
+**AI-Specific:**  
+• Prompt Engineering  
+• RAG & Multi-Agent Systems  
+• LLM Integration & Fine-tuning  
 
-Soft Skills:
-• Problem Solving
-• Technical Leadership
-• Project Management
-• Client Communication
-• Team Collaboration`
+**Soft Skills:**  
+• Problem Solving  
+• Project Leadership  
+• Team Collaboration & Client Communication`,
   },
   {
-    keywords: ['contact', 'hire', 'work with you'],
-    response: `I'm always interested in discussing new opportunities and collaborations.
+    keywords: ["contact", "hire", "work with you"],
+    response: `I’m open to new opportunities and collaborations.
 
-You can reach me through:
-• LinkedIn: [Your LinkedIn]
-• GitHub: [Your GitHub]
-• Email: [Your Email]
+Reach out to me via:  
+• [LinkedIn](https://www.linkedin.com/in/dylan-kotzer-3a5421190/)  
+• [GitHub](https://github.com/DKotzer)  
+• Email: dylan@dylankotzer.com  
 
-I'm particularly interested in:
-• AI Integration Projects
-• Full-Stack Development
-• Technical Consulting
-• Complex Problem-Solving Opportunities`
-  }
-];
+I’m especially interested in:  
+• Full-Stack Development Roles  
+• AI/LLM Integration Projects  
+• Consulting or Fractional CTO Work`,
+  },
+]
 
 export const defaultResponse = `I'm here to help you learn more about Dylan's experience, skills, and projects. You can ask about:
 • Technical skills and expertise
@@ -138,16 +122,16 @@ export const defaultResponse = `I'm here to help you learn more about Dylan's ex
 • Education and qualifications
 • AI capabilities and implementations
 
-What would you like to know more about?`;
+What would you like to know more about?`
 
 export const findResponse = (input: string): string => {
-  const normalizedInput = input.toLowerCase();
-  
+  const normalizedInput = input.toLowerCase()
+
   for (const item of responses) {
-    if (item.keywords.some(keyword => normalizedInput.includes(keyword))) {
-      return item.response;
+    if (item.keywords.some((keyword) => normalizedInput.includes(keyword))) {
+      return item.response
     }
   }
-  
-  return defaultResponse;
-};
+
+  return defaultResponse
+}
